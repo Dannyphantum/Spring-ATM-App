@@ -6,4 +6,5 @@ import springATM.ATMUser; //SUPERFLUOUS???
 
 public interface BankUserRepository extends CrudRepository<ATMUser, Long> {
 
+	
 }

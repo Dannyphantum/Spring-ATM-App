@@ -18,6 +18,12 @@
     <span th:if="${#fields.hasErrors('IDNumber')}" th:errors="*{IDNumber}">ID Error</span>
  </div>
  	 -->
+ 	 
+ <div class="form-group">
+    <input type="text" th:field="*{IDNumber}" placeholder="ID Number"></input>
+    <span th:if="${#fields.hasErrors('IDNumber')}" th:errors="*{IDNumber}">ID Number Error</span>
+  </div>
+  
 <div class="form-group">
     <input type="text" th:field="*{AcctNumber}" placeholder="Account Number"></input>
     <span th:if="${#fields.hasErrors('AcctNumber')}" th:errors="*{AcctNumber}">Account Number Error</span>
@@ -26,6 +32,11 @@
   <div class="form-group">
     <input type="text" th:field="*{Action}" placeholder="Deposit/Withdrawl"></input>
     <span th:if="${#fields.hasErrors('Action')}" th:errors="*{Action}">Action Error</span>
+  </div>
+  
+  <div class="form-group">
+    <input type="text" th:field="*{Amount}" placeholder="Amount"></input>
+    <span th:if="${#fields.hasErrors('Amount')}" th:errors="*{Amount}">Amount Error</span>
   </div>
   
   <div class="form-group">

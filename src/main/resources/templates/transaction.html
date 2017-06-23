@@ -10,7 +10,11 @@
   </head>
 <body>
 	<h2>Transaction Summary</h2>
+	<p th:text="'ID Number: ' + ${main.IDNumber}" />
 	<p th:text="'Account Number: ' + ${main.AcctNumber}" />
 	<p th:if="${main.Action} == 'Deposit'">Deposit</p>
+	<p th:if="${main.Action} != 'Deposit'">Withdrawl</p>
+	<p th:text="'Transaction Amount: ' + ${main.Amount}" />
+	<p th:text="'Customer Note: ' + ${main.Reason}" />
 </body>
 </html>
