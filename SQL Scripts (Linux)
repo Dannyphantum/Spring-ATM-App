@@ -1,0 +1,10 @@
+SQL SCRIPTS (Linux)
+----------------------------------
+mysql> create database ATM;
+Query OK, 1 row affected (0.04 sec)
+
+mysql> create user 'bankadmin'@'localhost' identified by 'LetMeIn';
+Query OK, 0 rows affected (0.13 sec)
+
+mysql> grant all on ATM.* to 'bankadmin'@'localhost';
+Query OK, 0 rows affected (0.01 sec)
